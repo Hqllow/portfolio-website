@@ -19,30 +19,24 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        I am currently a second-year{" "}
+        <span className="font-medium">Computer Science</span> student at the{" "}
+        <span className="font-medium">University of Florida</span>. I have
+        several years of experience as a{" "}
+        <span className="font-medium">full-stack developer</span>, and have led
+        the <span className="font-medium">Solar Gators Strategy Team</span> for
+        the last year. I am incredibly experienced with
+        <span className="font-medium"> Golang</span>,{" "}
+        <span className="font-medium">Java</span>,{" "}
+        <span className="font-medium">C#</span>,{" "}
+        <span className="font-medium">C++</span>,{" "}
+        <span className="font-medium">C</span>,{" "}
+        <span className="font-medium">Python</span>,{" "}
+        <span className="font-medium">Rust</span>, and both{" "}
+        <span className="font-medium">Javascript</span> and{" "}
+        <span className="font-medium">Typescript</span>. I am confident that I
+        would make an excellent addition to your{" "}
+        <span className="font-medium">Software Engineering</span> team.
       </p>
     </motion.section>
   );

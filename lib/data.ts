@@ -1,10 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaRankingStar } from "react-icons/fa6";
+import { MdSolarPower } from "react-icons/md";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import simImg from "@/public/flaresim.png";
+import telemImg from "@/public/telem-app.png";
+import nasaImg from "@/public/adc-moon.png";
 
 export const links = [
   {
@@ -35,57 +35,65 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Promoted to Solar Gators Strategy Lead",
+    location: "Gainesville, FL",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "After just one year as a team member, I was promoted to team lead and have developed multiple web applications for the solar car team.",
+    icon: React.createElement(FaRankingStar),
+    date: "Aug. 2025",
+  },
+  {
+    title: "Joined Solar Gators Team",
+    location: "Gainesville, FL",
+    description:
+      "As a team member, I refactored and deployed a new telemetry dashboard, improving the team's results at FSGP.",
+    icon: React.createElement(MdSolarPower),
+    date: "Sept. 2024",
+  },
+  {
+    title: "Accepted to University of Florida",
+    location: "Gainesville, FL",
+    description: "",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "July 2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Flare Simulation",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Physics-based, iterative simulation to predict lap speeds, acceleration, and distance, to optimize solar car performance at FSGP. Features OpenMeteo weather forecasting to predict energy changes.",
+    tags: ["React", "JavaScript", "Golang"],
+    imageUrl: simImg,
   },
   {
-    title: "rmtDev",
+    title: "Telemetry Web App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Real-time dashboard featuring streamed data from the Solar Gators car, Flare. Live GPS monitoring and historic data visualization pages, with full OAuth integration.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Neon", "OAuth"],
+    imageUrl: telemImg,
   },
   {
-    title: "Word Analytics",
+    title: "NASA App Development Challenge",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A real-world, first-person perspective simulation of the moon's surface with simulated communication and real-time azimuth calculations.",
+    tags: ["Unity", "C#", "Blender"],
+    imageUrl: nasaImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
+  "Java",
+  "Maven",
+  "Gradle",
+  "C++",
+  "C",
+  "C#",
+  "Rust",
+  "Golang",
+  "Unity",
+  "Flask",
   "CSS",
   "JavaScript",
   "TypeScript",
@@ -94,14 +102,8 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
   "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
 ] as const;
