@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://cdn.discordapp.com/attachments/906970158428483636/1448133553593253964/image.jpg?ex=69a05338&is=699f01b8&hm=c9a1cb1e986311f0efcee24fe7582781195a08ad41e783e4fbde2fc98a2045d7&"
+              src="https://cdn.discordapp.com/attachments/906970158428483636/1492168968876855347/solargators.jpg?ex=69da5a25&is=69d908a5&hm=0d2598b0fc484f9011c7df8a582ccda2ff3f17cf797cf55738ca625087dd7861&"
               alt="Bradley portrait"
               width="384"
               height="384"
