@@ -31,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://cdn.discordapp.com/attachments/906970158428483636/1492168968876855347/solargators.jpg?ex=69da5a25&is=69d908a5&hm=0d2598b0fc484f9011c7df8a582ccda2ff3f17cf797cf55738ca625087dd7861&"
+              src="/headshot.jpg"
               alt="Bradley portrait"
               width="384"
               height="384"
-              quality="95"
+              quality="85"
               priority={true}
-              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl transition duration-300 hover:brightness-105"
             />
           </motion.div>
 

@@ -19,13 +19,13 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I am currently a second-year{" "}
+        I am currently a third-year{" "}
         <span className="font-medium">Computer Science</span> student at the{" "}
         <span className="font-medium">University of Florida</span>. I have
         several years of experience as a{" "}
         <span className="font-medium">full-stack developer</span>, and have led
         the <span className="font-medium">Solar Gators Strategy Team</span> for
-        the last year. I am incredibly experienced with
+        the last two years. I am incredibly experienced with
         <span className="font-medium"> Golang</span>,{" "}
         <span className="font-medium">Java</span>,{" "}
         <span className="font-medium">C#</span>,{" "}

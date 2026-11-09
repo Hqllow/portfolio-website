@@ -40,7 +40,7 @@ export const experiencesData = [
     title: "Promoted to Solar Gators Strategy Lead",
     location: "Gainesville, FL",
     description:
-      "After just one year as a team member, I was promoted to team lead and have developed multiple web applications for the solar car team.",
+      "After just one year as a team member, I was promoted to strategy lead. I now coordinate software work for the team and develop tools that support race planning and vehicle performance.",
     icon: React.createElement(FaRankingStar),
     date: "Aug. 2025",
   },
@@ -48,14 +48,15 @@ export const experiencesData = [
     title: "Joined Solar Gators Team",
     location: "Gainesville, FL",
     description:
-      "As a team member, I refactored and deployed a new telemetry dashboard, improving the team's results at FSGP.",
+      "As a team member, I refactored and deployed a telemetry dashboard with live vehicle data, GPS monitoring, and historical views that helped the team make faster decisions at FSGP.",
     icon: React.createElement(MdSolarPower),
     date: "Sept. 2024",
   },
   {
     title: "Accepted to University of Florida",
     location: "Gainesville, FL",
-    description: "",
+    description:
+      "Began studying computer science at the University of Florida, building a foundation in software engineering, algorithms, and systems programming.",
     icon: React.createElement(LuGraduationCap),
     date: "July 2024",
   },

@@ -1,58 +1,34 @@
 "use client";
 
-import React from "react";
 import SectionHeading from "./section-heading";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
-  const { theme } = useTheme();
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <ol className="relative max-w-2xl before:absolute before:left-4 before:top-2 before:h-[calc(100%-0.5rem)] before:w-px before:bg-gray-300 dark:before:bg-white/20">
         {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            <VerticalTimelineElement
-              contentStyle={{
-                background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "left",
-                padding: "1.3rem 2rem",
-              }}
-              contentArrowStyle={{
-                borderRight:
-                  theme === "light"
-                    ? "0.4rem solid #9ca3af"
-                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
-              }}
-              date={item.date}
-              icon={item.icon}
-              iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-                fontSize: "1.5rem",
-              }}
-            >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+          <li className="relative pl-12" key={index}>
+            <span className="absolute left-0 top-1 flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white text-lg shadow-sm dark:border-white/10 dark:bg-gray-800">
+              {item.icon}
+            </span>
+            <article className="mb-8 rounded-xl border border-black/5 bg-gray-100 p-5 text-left dark:border-white/10 dark:bg-white/5">
+              <p className="text-sm font-medium text-gray-500 dark:text-white/50">
+                {item.date}
+              </p>
+              <h3 className="mt-1 font-semibold capitalize">{item.title}</h3>
+              <p className="font-normal">{item.location}</p>
+              <p className="mt-2 font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
-            </VerticalTimelineElement>
-          </React.Fragment>
+            </article>
+          </li>
         ))}
-      </VerticalTimeline>
+      </ol>
     </section>
   );
 }
