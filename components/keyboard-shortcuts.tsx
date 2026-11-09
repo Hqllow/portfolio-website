@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const shortcuts = [
   ["1", "Projects"],
@@ -11,6 +12,7 @@ const shortcuts = [
 
 export default function KeyboardShortcuts() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -38,13 +40,13 @@ export default function KeyboardShortcuts() {
           behavior: "smooth",
         });
       } else if (event.key.toLowerCase() === "r") {
-        window.location.href = "/Bradley Cederholm Resume.pdf";
+        router.push("/Bradley Cederholm Resume.pdf");
       }
     }
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [router]);
 
   return (
     <>
